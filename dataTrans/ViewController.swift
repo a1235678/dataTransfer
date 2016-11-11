@@ -8,19 +8,6 @@
 
 import UIKit
 
-struct MovieDetail{
-    var order: Int!
-    var name: String!
-    var runtime: Int!
-    var info: String!
-//    init() {
-//        self.order = 1
-//        self.name = "AAA"
-//        self.runtime = 2
-//        self.info = "BBB"
-//    }
-}
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var movie1Button: UIButton!

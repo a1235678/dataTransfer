@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1271" y="124"/>
         </scene>
         <!--電影資訊-->
         <scene sceneID="a1e-9O-22N">
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UA-VB-ALv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512" y="124"/>
+            <point key="canvasLocation" x="1945" y="124"/>
         </scene>
         <!--編輯電影資訊-->
         <scene sceneID="Txj-nr-WNq">
@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOu-dj-8mZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="124"/>
+            <point key="canvasLocation" x="2634" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GXf-KX-pHr">
