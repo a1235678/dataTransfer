@@ -40,15 +40,12 @@ class movie: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        updateInfo()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         //接收編輯頁面回傳的資訊
         let notificationName = Notification.Name("GetUpdateNoti")
         NotificationCenter.default.addObserver(self, selector: #selector(getUpdateNoti(noti:)), name: notificationName, object: nil)
+        updateInfo()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

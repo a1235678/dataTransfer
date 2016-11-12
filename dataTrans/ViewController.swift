@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         //透過viewController之間連線的segue
         let tag = sender as! Int
         let controller = segue.destination as! movie
@@ -50,16 +49,14 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //接收編輯頁面回傳的資訊
-        let notificationName = Notification.Name("GetUpdateNoti")
-        NotificationCenter.default.addObserver(self, selector: #selector(getUpdateNoti(noti:)), name: notificationName, object: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //接收編輯頁面回傳的資訊
+        let notificationName = Notification.Name("GetUpdateNoti")
+        NotificationCenter.default.addObserver(self, selector: #selector(getUpdateNoti(noti:)), name: notificationName, object: nil)
+        
+        //更新頁面資訊
         movie1Button.setTitle(movieArray[0].name, for: UIControlState.normal)
         movie2Button.setTitle(movieArray[1].name, for: UIControlState.normal)
         movie3Button.setTitle(movieArray[2].name, for: UIControlState.normal)
