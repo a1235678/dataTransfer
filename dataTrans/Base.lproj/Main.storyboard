@@ -150,7 +150,6 @@
                     <navigationItem key="navigationItem" title="電影資訊" id="BnQ-w6-qq7">
                         <barButtonItem key="rightBarButtonItem" title="編輯" id="U3I-lz-Qix">
                             <connections>
-                                <action selector="goEdit:" destination="x6e-f0-W8r" id="F94-6D-s7T"/>
                                 <segue destination="W9X-kI-LTi" kind="show" identifier="goEdit" id="kOr-U5-EMg"/>
                             </connections>
                         </barButtonItem>

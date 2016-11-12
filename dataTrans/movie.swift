@@ -16,16 +16,8 @@ class movie: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var infoTextView: UITextView!
     
-    
-    
-    @IBAction func goEdit(_ sender: UIButton) {
-        //透過viewController之間的連線 做segue
-        self.performSegue(withIdentifier: "goEdit", sender: nil)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //透過viewController之間的連線 做segue
+        //透過button & viewController之間連線的segue
         let controller = segue.destination as! EditMovie
         controller.editMovie = movieDetail
     }

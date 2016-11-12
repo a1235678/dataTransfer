@@ -21,13 +21,13 @@ class ViewController: UIViewController {
                       MovieDetail(order: 2, name: "列車上的女孩", runtime: 113, info: "別相信任何人"),]
     
     @IBAction func goDetail(_ sender: UIButton) {
-        //透過viewController之間的連線 做segue
+        //透過viewController之間連線的segue
         self.performSegue(withIdentifier: "goDetail", sender: sender.tag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //透過viewController之間的連線 做segue
+        //透過viewController之間連線的segue
         let tag = sender as! Int
         let controller = segue.destination as! movie
         controller.movieDetail = movieArray[tag]
